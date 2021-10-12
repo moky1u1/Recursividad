@@ -65,4 +65,31 @@ public class Ejercicios {
 
         return suma;
     }
+
+     /*
+    Metodo recursivo para comparar elemento por elemento
+    vector 1 = {5, 6, 2}
+    vector 2 = {2, 9, 2}
+    difreren =  3 + 3 + 0 = 6
+    los valores absolutos tienen que dar resultado 0
+     */
+
+    private static int compararVectores(int[] vector1, int[] vector2, int indice){
+        int sumaDiferencias;
+
+        if (indice == vector1.length - 1){//caso base
+            sumaDiferencias = Math.abs(vector1[indice] - vector2[indice]);
+        }else {//llamada recursiva
+            sumaDiferencias = Math.abs(vector1[indice] - vector2[indice]) + compararVectores(vector1, vector2, indice + 1);
+        }
+
+        return sumaDiferencias;
+    }
+    /*
+    Metodo auxiliar que realiza la llamada al metodo recursivo
+     */
+    public static boolean compararVectores(int[] vector1, int[] vector2){
+        return compararVectores(vector1, vector2, 0) == 0;
+    }
+
 }

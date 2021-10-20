@@ -92,4 +92,18 @@ public class Ejercicios {
         return compararVectores(vector1, vector2, 0) == 0;
     }
 
+    //Diseñar e implementar un método recursivo para calcular el enésimo término de
+    //la sucesión.
+
+    public static int fibonacci(int n){
+        if (n > 1) {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+            //caso base
+        }else if (n == 1){
+            return 1;
+        }else if (n == 0){
+            return 0;
+        }
+        return n;
+    }
 }

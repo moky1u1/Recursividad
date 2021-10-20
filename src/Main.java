@@ -7,8 +7,11 @@ public class Main {
         //int[] vector= {2, 4, 6};
         //System.out.println(Ejercicios.sumaVector(vector, 0));
 
-        int[] vector1 = {5, 6, 2};
-        int[] vector2 = {5, 6, 2};
-        System.out.println(Ejercicios.compararVectores(vector1, vector2));
+        //int[] vector1 = {5, 6, 2};
+        //int[] vector2 = {5, 6, 2};
+        //System.out.println(Ejercicios.compararVectores(vector1, vector2));
+
+        System.out.println("Sucesion Fibonacci: " + Ejercicios.fibonacci(10));
+
     }
 }

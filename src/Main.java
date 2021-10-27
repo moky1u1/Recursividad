@@ -11,7 +11,9 @@ public class Main {
         //int[] vector2 = {5, 6, 2};
         //System.out.println(Ejercicios.compararVectores(vector1, vector2));
 
-        System.out.println("Sucesion Fibonacci: " + Ejercicios.fibonacci(10));
+        //System.out.println("Sucesion Fibonacci: " + Ejercicios.fibonacci(10));
 
+        int [] vector = {2, 50, 6, 7, 6, 31, 4, 3};
+        System.out.println(Ejercicios.maximoVector(vector));
     }
 }

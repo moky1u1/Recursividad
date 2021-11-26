@@ -13,7 +13,11 @@ public class Main {
 
         //System.out.println("Sucesion Fibonacci: " + Ejercicios.fibonacci(10));
 
-        int [] vector = {2, 50, 6, 7, 6, 31, 4, 3};
-        System.out.println(Ejercicios.maximoVector(vector));
+        //int [] vector = {2, 50, 6, 7, 6, 31, 4, 3};
+        //System.out.println(Ejercicios.maximoVector(vector));
+
+        int[] vector = {10, 8, 6, 3, 2, 2, 1, 0};
+        System.out.println(Ejercicios.indiceVector(vector, 0));
+        System.out.println(Ejercicios.indiceVector(vector));
     }
 }

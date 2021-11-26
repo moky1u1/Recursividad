@@ -137,7 +137,7 @@ public class Ejercicios {
         return maximoVector(vector, 0,0);
     }
 
-//Indice Vector
+    //Indice Vector
     public static int  indiceVector (int[] vector,int indice) {
         int contador = 0;
 
@@ -159,4 +159,21 @@ public class Ejercicios {
         return indiceVector(vector,0) > 0;
     }
 
+
+    //Busqueda binaria
+    public static int busquedaBinaria(int  vector[], int dato){
+        int n = vector.length;
+        int centro,inf=0,sup=n-1;
+        while(inf<=sup){
+            centro=(sup+inf)/2;
+            if(vector[centro]==dato) return centro;
+            else if(dato < vector [centro] ){
+                sup=centro-1;
+            }
+            else {
+                inf=centro+1;
+            }
+        }
+        return -1;
+    }
 }
